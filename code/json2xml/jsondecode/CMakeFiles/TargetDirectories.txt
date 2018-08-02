@@ -1,0 +1,3 @@
+/home/chy/json2xml/jsondecode/CMakeFiles/edit_cache.dir
+/home/chy/json2xml/jsondecode/CMakeFiles/rebuild_cache.dir
+/home/chy/json2xml/jsondecode/CMakeFiles/demo.dir

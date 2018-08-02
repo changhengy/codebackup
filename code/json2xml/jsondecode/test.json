@@ -1,0 +1,2 @@
+{"merged_res":{"semantic_form":{"appid":15361,"err_no":0,"parsed_text":"打 电话 给 10086","raw_text":"打电话给10086","results":[{"domain":"telephone","intent":"call","object":{"_number":"10086","number":"10086"},"score":0.950}]}}}
+

@@ -1,0 +1,49 @@
+#include <iostream>
+#include <cstdint>
+#include "pugiconfig.hpp/pugixml.hpp"
+//#include "pugixml.hpp"
+#include <cstring>
+using namespace std;
+struct xml_string_writer : pugi::xml_writer
+{
+	std::string result;
+	virtual void write(const void* data, size_t size)
+	{
+		result += std::string(static_cast<const char*>(data), size);
+	}
+};
+void save_xml_config()
+{
+	pugi::xml_document doc;
+	pugi::xml_node pre = doc.prepend_child(pugi::node_declaration);
+	pre.append_attribute("version") = "1.0";
+	pre.append_attribute("encoding") = "UTF-8";
+	pre.append_attribute("standalone") = "no";
+ 
+	pugi::xml_node node = doc.append_child("event");
+	pugi::xml_node child_node = node.append_child("parsed_text");
+	child_node.set_value("parsed_text");
+ 
+	child_node = node.append_child("raw_text");
+	child_node.set_value("raw_text");
+ 
+	child_node = node.append_child("domain");
+	child_node.set_value("domain");
+ 
+	child_node = node.append_child("intent");
+	child_node.set_value("intent");
+
+	child_node = node.append_child("date");
+	child_node.set_value("date");
+
+	std::string strXmlData;
+	xml_string_writer writer;
+	doc.save(writer);
+	strXmlData = writer.result;
+cout <<    strXmlData   << "          "<<endl;
+}
+int main ()
+{
+	save_xml_config();
+	return 0;
+}

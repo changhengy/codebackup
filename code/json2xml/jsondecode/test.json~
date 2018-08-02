@@ -1,0 +1,24 @@
+{
+    "merged_res":{
+        "semantic_form":{
+            "appid":15361,
+            "err_no":0,
+            "parsed_text":"我 想听 周 杰伦 的 告白 气球",
+            "raw_text":"我想听周杰伦的告白气球",
+            "results":[
+                {
+                    "domain":"music",
+                    "intent":"play",
+                    "object":{
+                        "_name":"告白气球",
+                        "byartist":[
+                            "周杰伦"
+                        ],
+                        "name":"告白气球"
+                    },
+                    "score":0.65
+                }
+            ]
+        }
+    }
+}

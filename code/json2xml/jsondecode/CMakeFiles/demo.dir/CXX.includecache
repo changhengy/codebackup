@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chy/json2xml/jsondecode/json2xml.cpp
+iostream
+-
+cstdint
+-
+pugixml.hpp
+/home/chy/json2xml/jsondecode/pugixml.hpp
+pugiconfig.hpp
+/home/chy/json2xml/jsondecode/pugiconfig.hpp
+cstring
+-
+jsoncpp/json/json.h
+-
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+
+/home/chy/json2xml/jsondecode/pugiconfig.hpp
+
+/home/chy/json2xml/jsondecode/pugixml.hpp
+pugiconfig.hpp
+/home/chy/json2xml/jsondecode/pugiconfig.hpp
+stddef.h
+-
+exception
+-
+iterator
+-
+iosfwd
+-
+string
+-
+

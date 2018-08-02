@@ -1,0 +1,21 @@
+{
+    "merged_res":{
+        "semantic_form":{
+            "appid":15361,
+            "err_no":0,
+            "parsed_text":"今天 天气 怎样",
+            "raw_text":"今天天气怎样",
+            "results":[
+                {
+                    "domain":"weather",
+                    "intent":"get",
+                    "object":{
+                        "_date":"今天",
+                        "date":"2018-07-19,2018-07-19"
+                    },
+                    "score":0.65
+                }
+            ]
+        }
+    }
+}

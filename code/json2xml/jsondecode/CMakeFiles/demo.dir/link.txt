@@ -1,0 +1,1 @@
+/usr/bin/c++   -m64   CMakeFiles/demo.dir/json2xml.cpp.o  -o demo -rdynamic -ljsoncpp libpugixml.a 
